@@ -1,122 +1,203 @@
 {
-  "name": "Dorian Gailhard",
-  "email": "dorian.gailhard@telecom-paris.fr",
-  "github": "DorianGailhard",
-  "date_of_birth": "2000-04-22",
-  "location": "Saclay, Île-de-France, France",
-  "website": "https://github.com/DorianGailhard",
-  "education": [
-    {
-      "degree": "PhD student",
-      "institution": "Télécom Paris",
-      "dates": "May 2024 - Present",
-      "description": "Advised by Jhony Giraldo, Enzo Tartaglione, and Lirida Naviner, in collaboration with Arteris. Topic: 'System on Chips Design leveraging Artificial Intelligence'. Keywords: Graph theory, Generative models"
+  "basics": {
+    "name": "Dorian Gailhard",
+    "label": "PhD Student",
+    "image": "photo_zoom.jpeg",
+    "email": "dorian.gailhard@telecom-paris.fr",
+    "url": "https://github.com/DorianGailhard",
+    "summary": "PhD student at Télécom Paris, specializing in System on Chips Design leveraging Artificial Intelligence. Experience in graph theory, generative models, and optimization.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Saclay",
+      "countryCode": "FR",
+      "region": "Île-de-France"
     },
-    {
-      "degree": "M2 MVA (Maths, Vision, Learning)",
-      "institution": "ENS Paris Saclay",
-      "dates": "September 2022 - April 2023",
-      "description": "Courses: Statistical Learning, Reinforcement Learning, Computer Vision, Statistics, Probabilistic Graphs, Neurosciences, Topological Data Analysis, Interpretability, Deep RL, Diffusion Models and VAEs, Biostatistics, Time Series, Theoretical Foundations for Deep Learning, Speech & NLP"
-    },
-    {
-      "degree": "Master of Science in Data Science",
-      "institution": "Eurécom",
-      "dates": "September 2021 - June 2022",
-      "description": "Courses: Machine Learning, Cloud Infrastructure, Information Theory, Database Systems, Statistics and Decision Theory, Convex Optimization, IP laws, Advanced Statistical Inference, Deep Learning, Speech Processing, Quantum Computing, 3D graphics, Business laws"
-    },
-    {
-      "degree": "Master of Science in Engineering",
-      "institution": "Télécom Paris",
-      "dates": "September 2020 - June 2021",
-      "description": "Specialization in Computer Science, with a broad curriculum. Group project in Java and Python."
-    },
-    {
-      "degree": "Preparatory Classes MPSI-MP (Math, Physics, Computer Science)",
-      "institution": "Lycée Hoche",
-      "dates": "September 2018 - June 2020",
-      "description": "Intensive preparatory classes focused on Mathematics, Physics, and Computer Science."
-    }
-  ],
-  "work_experience": [
-    {
-      "title": "Research Intern",
-      "company": "Università degli studi di Padova",
-      "dates": "May 2023 - October 2023",
-      "location": "Padova, Italia",
-      "description": "Supervised by Francesco Rinaldi. Continuous formulations for variants of the Maximum Clique Problem in hypergraphs. Python implementation. Topics: Clustering, Graph Theory, Optimization (Combinatorial and Continuous), Tensor Theory, Python, Operations Research"
-    }
-  ],
-  "skills": {
-    "programming_languages": [
-      "Java (Swing, OpenCV)",
-      "Python (SKlearn, PyTorch, Jax & Haiku, Matplotlib, Pandas)",
-      "Matlab",
-      "C",
-      "C++ (SFML)"
-    ],
-    "database": [
-      "SQL",
-      "Spark",
-      "PostgreSQL"
-    ],
-    "web_development_infrastructure": [
-      "CSS",
-      "HTML",
-      "JavaScript",
-      "AWS services",
-      "Firebase services",
-      "Docker"
-    ],
-    "design_tools": [
-      "Gimp",
-      "Figma",
-      "Blender"
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "DorianGailhard",
+        "url": "https://github.com/DorianGailhard"
+      }
     ]
   },
+  "work": [
+    {
+      "name": "Télécom Paris",
+      "position": "PhD Student",
+      "url": "",
+      "startDate": "2024-05-01",
+      "endDate": "",
+      "summary": "Advised by Jhony Giraldo, Enzo Tartaglione, and Lirida Naviner, in collaboration with Arteris.",
+      "highlights": [
+        "Topic: System on Chips Design leveraging Artificial Intelligence",
+        "Fields: Graph theory, Generative models"
+      ]
+    },
+    {
+      "name": "Università degli Studi di Padova",
+      "position": "Research Intern",
+      "url": "https://www.unipd.it/en/",
+      "startDate": "2023-05-01",
+      "endDate": "2023-10-01",
+      "summary": "Supervised by Francesco Rinaldi. Worked on continuous formulations for variants of the Maximum Clique Problem in hypergraphs, with Python implementation.",
+      "highlights": [
+        "Topics: Clustering, Graph Theory, Optimization, Tensor Theory, Python, Operations Research"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Télécom Paris",
+      "location": "Saclay, France",
+      "url": "https://www.telecom-paris.fr/",
+      "area": "System on Chips Design",
+      "studyType": "PhD",
+      "startDate": "2024-05-01",
+      "endDate": "",
+      "courses": [
+        "Graph theory",
+        "Generative models",
+        "Artificial Intelligence"
+      ]
+    },
+    {
+      "institution": "ENS Paris Saclay",
+      "location": "Plateau de Saclay, France",
+      "url": "https://ens-paris-saclay.fr/",
+      "area": "Maths, Vision, Learning",
+      "studyType": "M2",
+      "startDate": "2022-09-01",
+      "endDate": "2023-04-01",
+      "courses": [
+        "Statistical Learning",
+        "Reinforcement Learning",
+        "Computer Vision",
+        "Probabilistic Graphs",
+        "Neurosciences",
+        "Deep RL",
+        "Diffusion Models",
+        "Biostatistics"
+      ]
+    },
+    {
+      "institution": "Eurécom",
+      "location": "Sophia Antipolis, France",
+      "url": "https://www.eurecom.fr/",
+      "area": "Data Science",
+      "studyType": "Master of Science",
+      "startDate": "2021-09-01",
+      "endDate": "2022-06-01",
+      "courses": [
+        "Machine Learning",
+        "Cloud Infrastructure",
+        "Information Theory",
+        "Statistics and Decision Theory",
+        "Quantum Computing"
+      ]
+    },
+    {
+      "institution": "Télécom Paris",
+      "location": "Saclay, France",
+      "url": "https://www.telecom-paris.fr/",
+      "area": "Engineering",
+      "studyType": "Master of Science",
+      "startDate": "2020-09-01",
+      "endDate": "2021-06-01",
+      "courses": [
+        "Electronics",
+        "IP Protocols",
+        "Wireless Communications"
+      ]
+    },
+    {
+      "institution": "Lycée Hoche",
+      "location": "Versailles, France",
+      "url": "",
+      "area": "Math, Physics, Computer Science",
+      "studyType": "Preparatory Classes MPSI-MP",
+      "startDate": "2018-09-01",
+      "endDate": "2020-06-01",
+      "courses": []
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming",
+      "level": "Advanced",
+      "keywords": [
+        "Java (Swing, OpenCV)",
+        "Python (SKlearn, PyTorch, Jax & Haiku)",
+        "Matlab",
+        "C, C++ (SFML)"
+      ]
+    },
+    {
+      "name": "Database",
+      "level": "Intermediate",
+      "keywords": [
+        "SQL",
+        "Spark",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "name": "Web Development & Infrastructure",
+      "level": "Intermediate",
+      "keywords": [
+        "CSS",
+        "HTML",
+        "JavaScript",
+        "AWS services",
+        "Firebase services",
+        "Docker"
+      ]
+    },
+    {
+      "name": "Design Tools",
+      "level": "Intermediate",
+      "keywords": [
+        "Gimp",
+        "Figma",
+        "Blender"
+      ]
+    }
+  ],
   "languages": [
     {
-      "name": "French",
-      "level": "Native"
+      "language": "French",
+      "fluency": "Native speaker"
     },
     {
-      "name": "English",
-      "level": "Advanced (C1)"
+      "language": "English",
+      "fluency": "Advanced (C1)"
     },
     {
-      "name": "Spanish",
-      "level": "Intermediate (B2.2)"
+      "language": "Spanish",
+      "fluency": "Intermediate (B2.2)"
     },
     {
-      "name": "Italian",
-      "level": "Intermediate (B2.2)"
+      "language": "Italian",
+      "fluency": "Intermediate (B2.2)"
     }
   ],
-  "soft_skills": [
+  "interests": [
     {
-      "skill": "Technical communication",
-      "description": "Ability to explain technical concepts to non-technical people"
+      "name": "Interests",
+      "keywords": [
+        "Cinema",
+        "History of Art",
+        "Humanities"
+      ]
     },
     {
-      "skill": "Creativity",
-      "description": "Ability to think outside the box and explore novel directions"
-    },
-    {
-      "skill": "Attention to detail",
-      "description": "Ability to be precise and rigorous"
+      "name": "Sports",
+      "keywords": [
+        "Indoor Climbing",
+        "Running",
+        "MMA"
+      ]
     }
-  ],
-  "hobbies": {
-    "interests": [
-      "Cinema",
-      "History of Art",
-      "Humanities"
-    ],
-    "sports": [
-      "Indoor Climbing",
-      "Running",
-      "MMA"
-    ]
-  }
+  ]
 }
 
-}
