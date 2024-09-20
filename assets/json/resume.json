@@ -5,7 +5,7 @@
     "image": "photo_zoom.jpeg",
     "email": "dorian.gailhard@telecom-paris.fr",
     "url": "https://github.com/DorianGailhard",
-    "summary": "PhD student at Télécom Paris, specializing in System on Chips Design leveraging Artificial Intelligence. Experience in graph theory, generative models, and optimization.",
+    "summary": "PhD student at Télécom Paris, aiming at developing a deep-learning model able to generate electronic chip designs.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -24,11 +24,12 @@
   "work": [
     {
       "name": "Télécom Paris",
+      "location": "Plateau de Saclay, France",
       "position": "PhD Student",
       "url": "",
       "startDate": "2024-05-01",
       "endDate": "",
-      "summary": "Advised by Jhony Giraldo, Enzo Tartaglione, and Lirida Naviner, in collaboration with Arteris.",
+      "summary": "Advised by Jhony Giraldo, Enzo Tartaglione, and Lirida Naviner, in collaboration with Arteris. Aiming at developing a deep-learning model able to generate electronic chip designs.",
       "highlights": [
         "Topic: System on Chips Design leveraging Artificial Intelligence",
         "Fields: Graph theory, Generative models"
@@ -36,95 +37,59 @@
     },
     {
       "name": "Università degli Studi di Padova",
+      "location": "Padua, Italy",
       "position": "Research Intern",
       "url": "https://www.unipd.it/en/",
       "startDate": "2023-05-01",
       "endDate": "2023-10-01",
-      "summary": "Supervised by Francesco Rinaldi. Worked on continuous formulations for variants of the Maximum Clique Problem in hypergraphs, with Python implementation.",
+      "summary": "Supervised by Francesco Rinaldi. Worked on continuous formulations for variants of the Maximum Clique Problem in hypergraphs, with Python and C++ implementations.",
       "highlights": [
-        "Topics: Clustering, Graph Theory, Optimization, Tensor Theory, Python, Operations Research"
+        "Topics: Clustering, Graph Theory, Optimization, Tensor Theory, Python, C++ , Operations Research"
       ]
     }
   ],
   "education": [
     {
-      "institution": "Télécom Paris",
-      "location": "Saclay, France",
-      "url": "https://www.telecom-paris.fr/",
-      "area": "System on Chips Design",
-      "studyType": "PhD",
-      "startDate": "2024-05-01",
-      "endDate": "",
-      "courses": [
-        "Graph theory",
-        "Generative models",
-        "Artificial Intelligence"
-      ]
-    },
-    {
-      "institution": "ENS Paris Saclay",
+      "institution": "ENS Paris-Saclay",
       "location": "Plateau de Saclay, France",
-      "url": "https://ens-paris-saclay.fr/",
       "area": "Maths, Vision, Learning",
       "studyType": "M2",
       "startDate": "2022-09-01",
       "endDate": "2023-04-01",
-      "courses": [
-        "Statistical Learning",
-        "Reinforcement Learning",
-        "Computer Vision",
-        "Probabilistic Graphs",
-        "Neurosciences",
-        "Deep RL",
-        "Diffusion Models",
-        "Biostatistics"
-      ]
+      "summary": "Deep practical and theoretical understanding of Artificial Intelligence topics, focusing on the research side of AI (maths, theory, experimentation, frontier research...)."
     },
     {
       "institution": "Eurécom",
       "location": "Sophia Antipolis, France",
-      "url": "https://www.eurecom.fr/",
       "area": "Data Science",
       "studyType": "Master of Science",
       "startDate": "2021-09-01",
       "endDate": "2022-06-01",
-      "courses": [
-        "Machine Learning",
-        "Cloud Infrastructure",
-        "Information Theory",
-        "Statistics and Decision Theory",
-        "Quantum Computing"
-      ]
+      "summary": "Introduction to data science topics, focusing on the practical and engineering aspect (cloud infrastructures, database management, web development...)."
     },
     {
       "institution": "Télécom Paris",
-      "location": "Saclay, France",
-      "url": "https://www.telecom-paris.fr/",
+      "location": "Plateau de Saclay, France",
       "area": "Engineering",
       "studyType": "Master of Science",
       "startDate": "2020-09-01",
       "endDate": "2021-06-01",
-      "courses": [
-        "Electronics",
-        "IP Protocols",
-        "Wireless Communications"
-      ]
+      "summary": "Broad curriculum introducing the main topics of computer science (programming languages, network infrastructures, digital economy, ...)."
     },
     {
       "institution": "Lycée Hoche",
       "location": "Versailles, France",
       "url": "",
       "area": "Math, Physics, Computer Science",
-      "studyType": "Preparatory Classes MPSI-MP",
+      "studyType": "Preparatory Classes MPSI-MP*",
       "startDate": "2018-09-01",
       "endDate": "2020-06-01",
-      "courses": []
+      "summary": "Two years intensive program preparing for the French national competitive exams for Grandes Écoles, equivalent to a Bachelor in Maths and Physics."
     }
   ],
   "skills": [
     {
       "name": "Programming",
-      "level": "Advanced",
       "keywords": [
         "Java (Swing, OpenCV)",
         "Python (SKlearn, PyTorch, Jax & Haiku)",
@@ -134,7 +99,6 @@
     },
     {
       "name": "Database",
-      "level": "Intermediate",
       "keywords": [
         "SQL",
         "Spark",
@@ -143,7 +107,6 @@
     },
     {
       "name": "Web Development & Infrastructure",
-      "level": "Intermediate",
       "keywords": [
         "CSS",
         "HTML",
@@ -155,7 +118,6 @@
     },
     {
       "name": "Design Tools",
-      "level": "Intermediate",
       "keywords": [
         "Gimp",
         "Figma",
@@ -179,25 +141,11 @@
     {
       "language": "Italian",
       "fluency": "Intermediate (B2.2)"
-    }
-  ],
-  "interests": [
-    {
-      "name": "Interests",
-      "keywords": [
-        "Cinema",
-        "History of Art",
-        "Humanities"
-      ]
     },
     {
-      "name": "Sports",
-      "keywords": [
-        "Indoor Climbing",
-        "Running",
-        "MMA"
-      ]
+      "language": "Chinese",
+      "fluency": "Beginner (A2)"
     }
-  ]
+    
 }
 
