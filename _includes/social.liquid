@@ -118,15 +118,11 @@
 {% if site.discord_id %}
   <a href="https://discord.com/users/{{ site.discord_id }}" title="Discord"><i class="fa-brands fa-discord"></i></a>
 {% endif %}
-% if site.leetcode_id %}
-<a href="https://leetcode.com/u/{{ site.leetcode_id }}" title="Leetcode">
-  <img src="/assets/img/leetcode.svg" alt="Leetcode" style="margin-top: -12px;" class="hover-effect">
-</a>
+{% if site.leetcode_id %}
+<a href="https://leetcode.com/u/{{ site.leetcode_id }}" title="Leetcode"><img src="/assets/img/leetcode.svg" alt="Leetcode" style="margin-top: -12px;" onmouseover="this.style.filter='brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(170deg)'" onmouseout="this.style.filter='none'"></a>
 {% endif %}
 {% if site.duolingo_id %}
-<a href="https://www.duolingo.com/profile/{{ site.duolingo_id }}" title="Duolingo">
-  <img src="/assets/img/duolingo.svg" alt="Duolingo" style="margin-top: -12px;" class="hover-effect">
-</a>
+<a href="https://www.duolingo.com/profile/{{ site.duolingo_id }}" title="Duolingo"><img src="/assets/img/duolingo.svg" alt="Duolingo" style="margin-top: -12px;" onmouseover="this.style.filter='brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(170deg)'" onmouseout="this.style.filter='none'"></a>
 {% endif %}
 {% if site.zotero_username %}
   <a href="https://www.zotero.org/{{ site.zotero_username }}" title="Zotero"><i class="ai ai-zotero"></i></a>
@@ -141,11 +137,3 @@
   </div>
   {% include scripts/wechatModal.liquid %}
 {% endif %}
-
-
-
-<style>
-  .hover-effect:hover {
-    filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(170deg);
-  }
-</style>
