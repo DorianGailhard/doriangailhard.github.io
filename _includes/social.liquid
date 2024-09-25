@@ -119,13 +119,12 @@
   <a href="https://discord.com/users/{{ site.discord_id }}" title="Discord"><i class="fa-brands fa-discord"></i></a>
 {% endif %}
 {% if site.leetcode_id %}
-<a href="https://leetcode.com/u/{{ site.leetcode_id }}" title="Leetcode" style="display:inline-block;">
+<a href="https://leetcode.com/u/{{ site.leetcode_id }}" title="Leetcode" style="display:inline-block;" id="leetcode">
 <svg
    class="fa-brands fa-discord"
    height="1em"
    viewBox="0 0 24 24"
-   width="1em"
-   id="leetcode">
+   width="1em">
   <defs id="defs3" />
   <path
      fill="var(--global-text-color)"
@@ -149,39 +148,14 @@
 </style>
 {% endif %}
 {% if site.duolingo_id %}
-<a href="https://www.duolingo.com/profile/{{ site.duolingo_id }}" title="Duolingo"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<a href="https://www.duolingo.com/profile/{{ site.duolingo_id }}" title="Duolingo" style="display:inline-block;" id="duolingo">
 <svg
+   class="fa-brands fa-discord"
    height="1em"
    viewBox="0 0 250 250"
-   width="1em"
-   version="1.1"
-   id="svg9"
-   sodipodi:docname="duolingo.svg"
-   inkscape:version="1.3.2 (1:1.3.2+202311252150+091e20ef0f)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
+   width="1em">
   <defs
      id="defs9" />
-  <sodipodi:namedview
-     id="namedview9"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="12.862069"
-     inkscape:cx="28.961126"
-     inkscape:cy="29"
-     inkscape:window-width="1920"
-     inkscape:window-height="946"
-     inkscape:window-x="0"
-     inkscape:window-y="27"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="g5" />
   <g
      clip-rule="evenodd"
      fill-rule="evenodd"
@@ -189,9 +163,7 @@
     <path
        d="m47.583 0h154.858c26.27 0 47.559 21.29 47.559 47.583v154.858c0 26.27-21.289 47.583-47.583 47.583h-154.834c-26.294-.024-47.583-21.313-47.583-47.607v-154.834c0-26.294 21.29-47.583 47.583-47.583z"
        fill="var(--global-text-color)"
-       id="path1"
-     onmouseover="this.setAttribute('fill', 'var(--global-theme-color)');"
-     onmouseout="this.setAttribute('fill', 'var(--global-text-color)');"
+       id="duolingo_path"
      />
     <path
        d="m250.008 161.499v-72.314a56.656 56.656 0 0 0 -12.182-18.36c.464-7.764-1.27-15.625-5.298-22.632-2.637-4.59-9.009-5.249-12.573-1.294l-8.081 8.96c-.049-.024-.098-.024-.147-.048 1.05-8.18-.342-16.626-4.346-24.17-2.49-4.688-7.885-5.518-11.596-1.71l-38.819 39.332c-.439.415-.903.854-1.342 1.294-.025.024-.074.048-.098.073-16.87 15.283-43.164 15.918-59.229 1.88a55.108 55.108 0 0 0 -3.15-3.174l-38.89-39.38c-3.712-3.809-9.107-2.978-11.597 1.71-3.98 7.519-5.396 15.917-4.37 24.047-.074.024-.147.024-.22.049l-7.984-8.863c-3.564-3.955-9.936-3.296-12.597 1.294-3.955 6.86-5.689 14.551-5.323 22.168a57.148 57.148 0 0 0 -12.182 17.7v74.585c8.765 19.996 28.735 33.985 51.953 33.985h2.49c23.023 0 42.847-13.745 51.709-33.472 8.521-.049 14.697-.073 18.531-.073 8.3-.024 14.77-.024 19.409-.024 8.838 19.775 28.711 33.569 51.757 33.569h1.758c23.658 0 43.921-14.527 52.417-35.132z"
@@ -235,6 +207,12 @@
      fill="#fff"
      id="path9" />
 </svg></a>
+
+<style>
+#duolingo:hover #duolingo_path {
+  fill: var(--global-theme-color);
+}
+</style>
 {% endif %}
 {% if site.zotero_username %}
   <a href="https://www.zotero.org/{{ site.zotero_username }}" title="Zotero"><i class="ai ai-zotero"></i></a>
