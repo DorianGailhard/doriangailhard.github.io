@@ -17,11 +17,3 @@ I published the following papers:
 <div class="publications">
   {% bibliography --group_by none --query @*[phd=true]* %}
 </div>
-
-<!-- <swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="true" rewind="true">
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/hygene/sample_generated_er.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/hygene/sample_generated_ego.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/hygene/mesh.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/hygene/sample_generated_tree.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-  <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/hygene/sample_generated_sbm.png" class="img-fluid rounded z-depth-1" %}</swiper-slide>
-</swiper-container> -->
