@@ -1,19 +1,23 @@
-<div class="row">
-  <div class="col-sm-12">
-    <div class="ieee-ref">
-      <span class="ref-number">[{{ forloop.index }}]</span>
-      <span class="ref-entry">
-        {% assign author_list = entry.author_array | map: "last" | join: ", " %}
-        {{ author_list }}.
-        "{{ entry.title }}"
-        {% if entry.journal %}<em>{{ entry.journal }}</em>{% endif %}
-        {% if entry.booktitle %}<em>In {{ entry.booktitle }}</em>{% endif %}
-        {% if entry.school %}<em>{{ entry.school }}</em>{% endif %}
-        {% if entry.year %}, {{ entry.year }}{% endif %}.
-        {% if entry.pdf %}
-          <a href="{% if entry.pdf contains '://' %}{{ entry.pdf }}{% else %}{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}{% endif %}" target="_blank">[PDF]</a>
-        {% endif %}
-      </span>
-    </div>
-  </div>
-</div>
+<p class="ieee-ref">
+  <span class="ref-number">[{{ forloop.index }}]</span>
+  <span class="ref-entry">
+    {% assign author_names = '' %}
+    {% for author in entry.author_array %}
+      {% assign initials = author.first | slice: 0,1 | append: '.' %}
+      {% assign author_names = author_names | append: initials | append: ' ' | append: author.last %}
+      {% if forloop.last == false %}
+        {% assign author_names = author_names | append: ', ' %}
+      {% endif %}
+    {% endfor %}
+    {{ author_names }}.
+    "{{ entry.title }}."
+    {% if entry.journal %}<em>{{ entry.journal }}</em>{% endif %}
+    {% if entry.volume %}, vol. {{ entry.volume }}{% endif %}
+    {% if entry.number %}, no. {{ entry.number }}{% endif %}
+    {% if entry.pages %}, pp. {{ entry.pages }}{% endif %}
+    {% if entry.year %}, {{ entry.year }}{% endif %}.
+    {% if entry.pdf %}
+      <a href="{% if entry.pdf contains '://' %}{{ entry.pdf }}{% else %}{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}{% endif %}" target="_blank">[PDF]</a>
+    {% endif %}
+  </span>
+</p>
