@@ -75,9 +75,9 @@ layout: default
   {% endif %}
 
   {% if page.related_publications %}
-    <h2>References</h2>
+    <h2>Bibliography</h2>
     <div class="publications">
-      {% bibliography --group_by none --cited_in_order %}
+      {% bibliography --group_by none --cited_in_order --template bib_blog --file {{ page.bibliography }} %}
     </div>
   {% endif %}
 
