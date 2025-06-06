@@ -61,7 +61,6 @@
     <div class="post distill">
       <d-title>
         <h1 class="post-title">{{ page.title }}</h1>
-      </d-title>
     <p class="post-meta">
       Created in {{ page.date | date: '%B %d, %Y' }}
       {% if page.author %}by {{ page.author }}{% endif %}
@@ -104,12 +103,11 @@
         {% endfor %}
       {% endif %}
     </p>
+      </d-title>
       <d-article>
         <article class="post-content">
         {% if page.toc %}
-      <div id="table-of-contents">
         {% toc %}
-      </div>
       {% endif %}
     <div id="markdown-content">
       {{ content }}
