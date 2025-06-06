@@ -103,14 +103,12 @@
       {% endif %}
     </p>
       </d-title>
-
-      <d-article>
-        <article class="post-content">
-    {% if page.toc %}
+	{% if page.toc %}
       <div id="table-of-contents">
         {% toc %}
       </div>
-      <hr>
+      <d-article>
+        <article class="post-content">
     {% endif %}
     <div id="markdown-content">
       {{ content }}
