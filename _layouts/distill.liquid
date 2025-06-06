@@ -2,22 +2,10 @@
 <html>
   <head>
     {% include head.liquid %}
-    {% if site.enable_medium_zoom %}
-      <!-- Medium Zoom JS -->
-      <script
-        defer
-        src="{{ site.third_party_libraries.medium_zoom.url.js }}"
-        integrity="{{ site.third_party_libraries.medium_zoom.integrity.js }}"
-        crossorigin="anonymous"
-      ></script>
-      <script defer src="{{ '/assets/js/zoom.js' | relative_url | bust_file_cache }}"></script>
-    {% endif %}
-    {% include scripts/jquery.liquid %}
-    {% include scripts/mathjax.liquid %}
+
     <!-- Distill js -->
     <script src="{{ '/assets/js/distillpub/template.v2.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/distillpub/transforms.v2.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/distillpub/overrides.js' | relative_url }}"></script>
     {% if page._styles %}
       <!-- Page/Post style -->
       <style type="text/css">
@@ -70,51 +58,13 @@
 
     <!-- Content -->
     <div class="post distill">
-      <header class="post-header">
-        <h1 class="post-title">{{ page.title }}</h1>
-        <p class="post-meta">
-          Created in {{ page.date | date: '%B %d, %Y' }}
-          {% if page.author %}by {{ page.author }}{% endif %}
-          {% if page.last_updated %}, last updated in {{ page.last_updated | date: '%B %d, %Y' }}{% endif %}
-          {% if page.meta %}• {{ page.meta }}{% endif %}
-        </p>
-        <p class="post-tags">
-          {% if url_beginning == '/blog/' %}
-            <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}"> <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
-          {% else %}
-            <i class="fa-solid fa-calendar fa-sm"></i> {{ year }}
-          {% endif %}
-          {% if tags != '' %}
-            &nbsp; &middot; &nbsp;
-            {% for tag in page.tags %}
-              {% if url_beginning == '/blog/' %}
-                <a href="{{ tag | slugify | prepend: '/blog/tag/' | prepend: site.baseurl}}"> <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a>
-              {% else %}
-                <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}
-              {% endif %}
-              {% unless forloop.last %}
-                &nbsp;
-              {% endunless %}
-            {% endfor %}
-          {% endif %}
-
-          {% if categories != '' %}
-            &nbsp; &middot; &nbsp;
-            {% for category in page.categories %}
-              {% if url_beginning == '/blog/' %}
-                <a href="{{ category | slugify | prepend: '/blog/category/' | prepend: site.baseurl}}">
-                  <i class="fa-solid fa-tag fa-sm"></i> {{ category -}}
-                </a>
-              {% else %}
-                <i class="fa-solid fa-tag fa-sm"></i> {{ category }}
-              {% endif %}
-              {% unless forloop.last %}
-                &nbsp;
-              {% endunless %}
-            {% endfor %}
-          {% endif %}
-        </p>
-      </header>
+      <d-title>
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.description }}</p>
+      </d-title>
+      {% if page.authors %}
+        <d-byline></d-byline>
+      {% endif %}
 
       <d-article>
         {% if page.toc %}
@@ -143,10 +93,8 @@
 
     <!-- Footer -->
     {% include footer.liquid %}
-    {% include scripts/bootstrap.liquid %}
-    {% include scripts/analytics.liquid %}
-    {% include scripts/progressBar.liquid %}
-    {% include scripts/back_to_top.liquid %}
-    {% include scripts/search.liquid %}
+
+    <!-- JavaScripts -->
+    {% include distill_scripts.liquid %}
   </body>
 </html>
