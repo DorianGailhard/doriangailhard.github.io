@@ -13,5 +13,5 @@ I am doing a PhD in Artificial Intelligence at [Télécom Paris](https://www.tel
 I worked on the following papers:
 
 <div class="publications">
-  {% bibliography --group_by none --query @*[phd=true]* %}
+  {% bibliography --file papers --group_by none --query @*[phd=true]* %}
 </div>
