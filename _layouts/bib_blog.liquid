@@ -24,7 +24,7 @@
       {{ author }}{% unless forloop.last %}{% if forloop.rindex0 == 1 %} and{% else %},{% endif %}{% else %},{% endunless %}
     {% endif %}
   {% endfor %}
-  {% if entry.year %}{{ entry.year }},{% endif %}
+  {% if entry.year %}{{ entry.year }}{% unless entry.journal or entry.booktitle %}.{% else %},{% endunless %}{% endif %}
   {% if entry.journal %}<i>{{ entry.journal }}</i>.{% endif %}
   {% if entry.booktitle %}<i>{{ entry.booktitle }}</i>.{% endif %}
 </div>
