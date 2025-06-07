@@ -1,3 +1,4 @@
+<div id="{{ entry.key }}">
   <b>{{ entry.title }}</b>&nbsp;
   {% if entry.pdf %}
     <a href="{{ entry.pdf }}" 
@@ -24,7 +25,7 @@
     {% endif %}
   ,
   {% endfor %}
-  {% if entry.journal %}<i>{{ entry.journal }}</i>{% unless entry.year or entry.booktitle or entry.note %}.{% else %},{% endunless %}{% endif %}
-  {% if entry.booktitle %}<i>{{ entry.booktitle }}</i>{% unless entry.note %}.{% else %},{% endunless %}{% endif %}
-  {% if entry.note %}{{ entry.note }}.{% endif %}
-  {% if entry.year %}{{ entry.year }}.{% endif %}
+  {% if entry.year %}{{ entry.year }},{% endif %}
+  {% if entry.journal %}<i>{{ entry.journal }}</i>.{% endif %}
+  {% if entry.booktitle %}<i>{{ entry.booktitle }}</i>.{% endif %}
+</div>
