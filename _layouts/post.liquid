@@ -79,8 +79,8 @@ layout: default
 
   {% if page.related_publications %}
     <h2>References</h2>
-    <ol class="bibliography">
-      {% bibliography --cited_in_order --template bib_blog %}
+    <ol class="publications">
+      {% bibliography --group_by none --cited_in_order --template bib_blog %}
     </ol>
   {% endif %}
 
