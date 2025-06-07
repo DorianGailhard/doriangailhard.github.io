@@ -1,21 +1,21 @@
----
----
-
-<li id="{{ entry.key }}">
+<li id="{{ entry.key }}" style="margin-bottom: 12px; line-height: 1.5;">
   {% assign authors = entry.author_array %}
+  {% assign author_count = authors | size %}
   {% for author in authors %}
     {% if author.first %}
-      {{ author.first }} {{ author.last }}
+      <span style="font-weight: 500;">{{ author.first }} {{ author.last }}</span>
     {% else %}
-      {{ author }}
+      <span style="font-weight: 500;">{{ author }}</span>
     {% endif %}
-    {% unless forloop.last %}, {% endunless %}
+    {% if forloop.last == false %}
+      {% if forloop.rindex0 == 1 %} and {% else %}, {% endif %}
+    {% endif %}
   {% endfor %},
-  “<em>{{ entry.title }}</em>,”
-  {% if entry.journal %} {{ entry.journal }},{% endif %}
-  {% if entry.booktitle %} {{ entry.booktitle }},{% endif %}
-  {% if entry.year %} {{ entry.year }}.{% endif %}
+  <em style="font-weight: 600; color: #333;">{{ entry.title }}</em>,
+  {% if entry.journal %}<span style="font-style: italic;">{{ entry.journal }}</span>,{% endif %}
+  {% if entry.booktitle %}<span style="font-style: italic;">{{ entry.booktitle }}</span>,{% endif %}
+  {% if entry.year %}<span style="color: #555;">{{ entry.year }}</span>.{% endif %}
   {% if entry.pdf %}
-    <a href="{{ entry.pdf }}" target="_blank" rel="noopener">[pdf]</a>
+    <a href="{{ entry.pdf }}" target="_blank" rel="noopener" style="color: #0066cc; text-decoration: none;">[pdf]</a>
   {% endif %}
 </li>
