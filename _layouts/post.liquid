@@ -81,9 +81,7 @@ layout: default
   
   {% if page.related_publications %}
     <h2>References</h2>
-    <ol>
-      {% bibliography --group_by none --cited_in_order --template bib_blog %}
-    </ol>
+    {% bibliography --group_by none --cited_in_order --template bib_blog %}
   {% endif %}
 
   {% if site.related_blog_posts.enabled %}
