@@ -1,8 +1,9 @@
 <li id="{{ entry.key }}">
-  [{% assign i = forloop.index0 | plus:1 %}{{ i }}]
   {% assign authors = entry.author %}
   {% for author in authors %}
-    {{ author.first }} {{ author.last }}{% if forloop.last == false %}, {% endif %}
+    {% assign first = author.first | join: " " %}
+    {% assign last = author.last | join: " " %}
+    {{ first }} {{ last }}{% if forloop.last == false %}, {% endif %}
   {% endfor %},
   “<em>{{ entry.title }}</em>,”
   {% if entry.journal %} {{ entry.journal }},{% endif %}
