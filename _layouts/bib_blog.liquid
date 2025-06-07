@@ -1,22 +1,24 @@
-<li id="{{ entry.key }}" style="margin-bottom: 1.5em;">
+{% if entry.key %}
+<li id="{{ entry.key }}">
   <b>{{ entry.title }}</b>
   {% if entry.pdf %}<a href="{{ entry.pdf }}" target="_blank" rel="noopener">[PDF]</a>{% endif %}
   
-  <div style="margin: 0.3em 0 0.5em 0;">
+  <div>
     {% assign authors = entry.author_array %}
     {% assign author_count = authors | size %}
     {% for author in authors %}
       {% if author.last and author.first %}
-        {{ author.last }}, {{ author.first | slice: 0 | upcase }}.{% unless forloop.last %}{% if forloop.rindex0 == 1 %} and{% else %},{% endif %}{% endunless %}
+	{{ author.last }}, {{ author.first | slice: 0 | upcase }}.{% unless forloop.last %}{% if forloop.rindex0 == 1 %} and{% else %},{% endif %}{% endunless %}
       {% elsif author.last %}
-        {{ author.last }}{% unless forloop.last %}{% if forloop.rindex0 == 1 %} and{% else %},{% endif %}{% endunless %}
+	{{ author.last }}{% unless forloop.last %}{% if forloop.rindex0 == 1 %} and{% else %},{% endif %}{% endunless %}
       {% else %}
-        {{ author }}{% unless forloop.last %}{% if forloop.rindex0 == 1 %} and{% else %},{% endif %}{% endunless %}
+	{{ author }}{% unless forloop.last %}{% if forloop.rindex0 == 1 %} and{% else %},{% endif %}{% endunless %}
       {% endif %}
     {% endfor %}
   </div>
-  {% if entry.year %}{{ entry.year }}.{% endif %}
   {% if entry.journal %}<i>{{ entry.journal }}</i>{% unless entry.year or entry.booktitle or entry.note %}.{% else %},{% endunless %}{% endif %}
   {% if entry.booktitle %}<i>{{ entry.booktitle }}</i>{% unless entry.note %}.{% else %},{% endunless %}{% endif %}
   {% if entry.note %}{{ entry.note }}.{% endif %}
+  {% if entry.year %}{{ entry.year }}.{% endif %}
 </li>
+{% endif %}
