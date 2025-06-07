@@ -1,3 +1,14 @@
-{% raw %}
-THIS IS THE TEMPLATE TEST
-{% endraw %}
+<li id="{{ entry.key }}">
+  [{% assign i = forloop.index0 | plus:1 %}{{ i }}]
+  {% assign authors = entry.author %}
+  {% for author in authors %}
+    {{ author.first }} {{ author.last }}{% if forloop.last == false %}, {% endif %}
+  {% endfor %},
+  “<em>{{ entry.title }}</em>,”
+  {% if entry.journal %} {{ entry.journal }},{% endif %}
+  {% if entry.booktitle %} {{ entry.booktitle }},{% endif %}
+  {% if entry.year %} {{ entry.year }}.{% endif %}
+  {% if entry.pdf %}
+    <a href="{{ entry.pdf }}" target="_blank" rel="noopener">[pdf]</a>
+  {% endif %}
+</li>
