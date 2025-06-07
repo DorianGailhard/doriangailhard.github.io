@@ -1,9 +1,15 @@
+---
+---
+
 <li id="{{ entry.key }}">
-  {% assign authors = entry.author %}
+  {% assign authors = entry.author_array %}
   {% for author in authors %}
-    {% assign first = author.first | join: " " %}
-    {% assign last = author.last | join: " " %}
-    {{ first }} {{ last }}{% if forloop.last == false %}, {% endif %}
+    {% if author.first %}
+      {{ author.first }} {{ author.last }}
+    {% else %}
+      {{ author }}
+    {% endif %}
+    {% unless forloop.last %}, {% endunless %}
   {% endfor %},
   “<em>{{ entry.title }}</em>,”
   {% if entry.journal %} {{ entry.journal }},{% endif %}
