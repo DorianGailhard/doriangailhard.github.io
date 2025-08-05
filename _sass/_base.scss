@@ -19,6 +19,7 @@ span {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: normal;
+  font-style: normal;
 }
 
 strong {
@@ -26,6 +27,10 @@ strong {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: bold;
+}
+
+i {
+  font-style: italic;
 }
 
 hr {
