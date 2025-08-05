@@ -54,6 +54,8 @@ table {
 a,
 table.table a {
   color: var(--global-theme-color);
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
 
   &:hover {
     color: var(--global-theme-color);
