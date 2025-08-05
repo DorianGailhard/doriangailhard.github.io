@@ -14,9 +14,18 @@ h6,
 em,
 div,
 li,
-span,
+span {
+  color: var(--global-text-color);
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+}
+
 strong {
   color: var(--global-text-color);
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
 }
 
 hr {
