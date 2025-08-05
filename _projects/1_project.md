@@ -4,7 +4,7 @@ title: PhD
 description: PhD I am currently enrolled in.
 img: assets/img/logo_soda.png
 importance: 1
-category: work
+category: Professional
 related_publications: false
 ---
 
