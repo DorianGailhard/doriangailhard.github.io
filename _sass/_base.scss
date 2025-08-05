@@ -11,7 +11,6 @@ h3,
 h4,
 h5,
 h6,
-em,
 div,
 li,
 span {
@@ -29,7 +28,11 @@ strong {
   font-weight: bold;
 }
 
-i {
+i, em {
+  color: var(--global-text-color);
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
   font-style: italic;
 }
 
