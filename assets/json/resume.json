@@ -24,7 +24,7 @@
   "work": [
     {
       "name": "Télécom Paris",
-      "location": "Plateau de Saclay, France",
+      "location": "Saclay, France",
       "position": "PhD Student",
       "url": "",
       "startDate": "2024-05-01",
@@ -51,7 +51,7 @@
   "education": [
     {
       "institution": "ENS Paris-Saclay",
-      "location": "Plateau de Saclay, France",
+      "location": "Saclay, France",
       "area": "Maths, Vision, Learning",
       "studyType": "M2",
       "startDate": "2022-09-01",
@@ -69,7 +69,7 @@
     },
     {
       "institution": "Télécom Paris",
-      "location": "Plateau de Saclay, France",
+      "location": "Saclay, France",
       "area": "Engineering",
       "studyType": "Master of Science",
       "startDate": "2020-09-01",
@@ -127,24 +127,28 @@
   ],
   "languages": [
     {
-      "language": "French",
+      "language": "🇫🇷 French",
       "fluency": "Native speaker"
     },
     {
-      "language": "English",
+      "language": "🇬🇧 English",
       "fluency": "Advanced (C1)"
     },
     {
-      "language": "Spanish",
-      "fluency": "Intermediate (B2.2)"
+      "language": "🇪🇸 Spanish",
+      "fluency": "Intermediate (B1)"
     },
     {
-      "language": "Italian",
-      "fluency": "Intermediate (B2.2)"
+      "language": "🇮🇹 Italian",
+      "fluency": "Intermediate (B1)"
     },
     {
-      "language": "Chinese",
-      "fluency": "Beginner (A2)"
+      "language": "🇨🇳 Chinese",
+      "fluency": "Beginner (A1)"
+    },
+    {
+      "language": "🇸🇦 Arabic",
+      "fluency": "Beginner (A1)"
     }
   ]
     
