@@ -36,7 +36,7 @@
           <h6 class="title font-weight-bold ml-1 ml-md-4">
             <a href="{{ content.workurl }}">{{ content.position }}</a>
           </h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ content.name }}
+          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
 		{% if content.workurl %}
 		    <a href="{{ content.url }}" 
 		       target="_blank" 
@@ -46,7 +46,7 @@
 			      transition: color 0.2s ease;"
 		       onmouseover="this.style.color='var(--global-theme-color)'"
 		       onmouseout="this.style.color='inherit'">
-		       [site]
+		       {{ content.name }}
 		    </a>
 		  {% endif %}
 	  </h6>
