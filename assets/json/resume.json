@@ -26,7 +26,8 @@
       "name": "Télécom Paris",
       "location": "Saclay, France",
       "position": "PhD Student",
-      "url": "https://doriangailhard.github.io/projects/1_project/",
+      "url": "https://www.telecom-paris.fr/",
+      "workurl": "https://doriangailhard.github.io/projects/phd/",
       "startDate": "2024-05-01",
       "endDate": "",
       "summary": "Advised by Jhony Giraldo, Enzo Tartaglione, and Lirida Naviner, in collaboration with Arteris. Aiming at developing a deep-learning model able to generate electronic chip designs.",
@@ -40,6 +41,7 @@
       "location": "Padua, Italy",
       "position": "Research Intern",
       "url": "https://www.unipd.it/en/",
+      "workurl": "https://github.com/DorianGailhard/M2Internship",
       "startDate": "2023-05-01",
       "endDate": "2023-10-01",
       "summary": "Supervised by Francesco Rinaldi. Worked on continuous formulations for variants of the Maximum Clique Problem in hypergraphs, with Python and C++ implementations.",
@@ -54,6 +56,7 @@
       "location": "Saclay, France",
       "area": "Maths, Vision, Learning",
       "url": "https://www.master-mva.com/",
+      "workurl": "https://github.com/DorianGailhard/Master2MVA",
       "studyType": "M2",
       "startDate": "2022-09-01",
       "endDate": "2023-04-01",
@@ -64,6 +67,7 @@
       "location": "Sophia Antipolis, France",
       "area": "Data Science",
       "url": "https://www.eurecom.fr/fr",
+      "workurl": "https://github.com/DorianGailhard/M1Eurecom",
       "studyType": "Master of Science",
       "startDate": "2021-09-01",
       "endDate": "2022-06-01",
@@ -73,6 +77,7 @@
       "institution": "Télécom Paris",
       "location": "Saclay, France",
       "url": "https://www.telecom-paris.fr/",
+      "workurl": "https://github.com/DorianGailhard/OtherProjects",
       "area": "Engineering",
       "studyType": "Master of Science",
       "startDate": "2020-09-01",
@@ -139,11 +144,11 @@
     },
     {
       "language": "🇪🇸 Spanish",
-      "fluency": "Intermediate (B1)"
+      "fluency": "Intermediate (B2.1)"
     },
     {
       "language": "🇮🇹 Italian",
-      "fluency": "Intermediate (B1)"
+      "fluency": "Intermediate (B2.1)"
     },
     {
       "language": "🇨🇳 Chinese",
