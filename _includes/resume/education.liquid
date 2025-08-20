@@ -43,13 +43,11 @@
 		    <a href="{{ content.url }}" 
 		       target="_blank" 
 		       rel="noopener"
-		       style="color: inherit; 
-			      text-decoration: none;
-			      transition: color 0.2s ease;"
-		       onmouseover="this.style.color='var(--global-theme-color)'"
-		       onmouseout="this.style.color='inherit'">
+		       style="color: var(--global-text-color);">
 		       {{ content.institution }}
 		    </a>
+		  {% else %}
+		       {{ content.institution }}
 		  {% endif %}
 	  </h6>
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ content.area }}</h6>
