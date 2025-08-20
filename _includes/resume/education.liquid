@@ -39,15 +39,13 @@
             <a href="{{ content.workurl }}">{{ content.studyType }}</a>
           </h6>
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
-          	{% if content.workurl %}
+          	{% if content.url %}
 		    <a href="{{ content.url }}" 
 		       target="_blank" 
 		       rel="noopener"
 		       style="color: var(--global-text-color);">
 		       {{ content.institution }}
 		    </a>
-		  {% else %}
-		       {{ content.institution }}
 		  {% endif %}
 	  </h6>
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ content.area }}</h6>
