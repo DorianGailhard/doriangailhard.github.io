@@ -217,6 +217,9 @@
 }
 </style>
 {% endif %}
+{% if site.letterboxd_username %}
+  <a href="https://letterboxd.com/{{ site.letterboxd_username }}" title="Letterboxd"><i class="fa-brands fa-letterboxd"></i></a>
+{% endif %}
 {% if site.zotero_username %}
   <a href="https://www.zotero.org/{{ site.zotero_username }}" title="Zotero"><i class="ai ai-zotero"></i></a>
 {% endif %}
