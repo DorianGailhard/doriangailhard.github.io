@@ -311,7 +311,7 @@ scholar:
   last_name: [Gailhard]
   first_name: [Dorian, D.]
 
-  style: ieee
+  style: numeric-comp
   locale: en
 
   source: /_bibliography/
