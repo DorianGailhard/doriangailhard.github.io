@@ -24,3 +24,7 @@ nav_order: 7
 - **CaLISTA Workshop Geometry-Informed Machine Learning**  
   [[Link](https://sites.google.com/view/calistaworkshop2024paris/home)]  
   Attended.
+
+- **Learning on Graphs Paris Meetup 2026**  
+  [[Link](https://sites.google.com/view/learning-on-graph-paris-meetup/)]  
+  Attended.
