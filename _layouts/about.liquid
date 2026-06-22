@@ -39,6 +39,8 @@ layout: default
     {% endif %}
 
     <div class="clearfix">{{ content }}</div>
+    
+    <hr>
 
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
@@ -48,6 +50,8 @@ layout: default
       {% include news.liquid limit=true %}
     {% endif %}
 
+    <hr>
+  
     <!-- Latest posts -->
     {% if site.latest_posts.enabled %}
       <h2>
@@ -55,6 +59,8 @@ layout: default
       </h2>
       {% include latest_posts.liquid %}
     {% endif %}
+    
+    <hr>
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
