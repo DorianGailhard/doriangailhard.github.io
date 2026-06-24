@@ -2,27 +2,6 @@
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
-// Custom
-.language-duolingo {
-  text-align: right;
-  font-size: 0.85rem;
-
-  a {
-    color: var(--global-text-color-light);
-    text-decoration: none;
-    border: 1px solid var(--global-divider-color);
-    border-radius: 999px;
-    padding: 0.25rem 0.65rem;
-
-    &:hover {
-      color: var(--global-theme-color);
-      border-color: var(--global-theme-color);
-      text-decoration: none;
-    }
-  }
-}
-
-
 // Typography
 body {
   text-align: justify;
@@ -1073,37 +1052,43 @@ progress::-moz-progress-bar {
 }
 
 /* Table of Contents */
-nav[data-toggle="toc"] {
-  top: 5rem;
+#toc-sidebar {
+  z-index: 1;
+  padding-top: 1rem;
 
-  .nav .nav > li > a {
-    font-size: 0.75rem;
+  .nav {
+    display: block;
+    border-left: 1px solid var(--global-divider-color);
+    padding-left: 1rem;
   }
 
   .nav > li > a {
-    color: var(--global-text-color);
-    font-size: 0.75rem;
+    display: block;
+    color: var(--global-text-color-light);
+    font-size: 0.875rem;
+    line-height: 1.4;
+    padding: 0.25rem 0;
+    border-left: 2px solid transparent;
+    margin-left: -1.1rem;
+    padding-left: 1rem;
+    text-decoration: none;
 
     &:hover {
-      color: var(--global-hover-color);
-      border-left-color: var(--global-hover-color);
+      color: var(--global-theme-color);
+      border-left-color: var(--global-theme-color);
     }
   }
 
   .nav-link.active {
     color: var(--global-theme-color);
     border-left-color: var(--global-theme-color);
-    font-size: 0.75rem;
-
-    &:hover {
-      color: var(--global-hover-color);
-      border-left-color: var(--global-hover-color);
-    }
+    font-weight: 500;
   }
-}
 
-#toc-sidebar {
-  z-index: 1;
+  .nav .nav > li > a {
+    font-size: 0.8rem;
+    padding-left: 1.5rem;
+  }
 }
 
 /* small screens */

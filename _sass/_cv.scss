@@ -1,6 +1,37 @@
 /*****************************
  * CV shared styles
  *****************************/
+ 
+ // Custom
+ .cv-card-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+
+  .card-title {
+    margin-bottom: 1rem;
+  }
+}
+
+.language-duolingo-badge {
+  font-size: 0.8rem;
+  color: var(--global-text-color-light);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+  white-space: nowrap;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--global-theme-color);
+    border-color: var(--global-theme-color);
+    text-decoration: none;
+  }
+}
+ 
+ 
+
 
 div.container-link-button {
   margin-right: 0.5rem;
