@@ -5,7 +5,7 @@
     "image": "photo_zoom.jpeg",
     "email": "dorian.gailhard@telecom-paris.fr",
     "url": "https://github.com/DorianGailhard",
-    "summary": "PhD student at Télécom Paris, aiming at developing a deep-learning model able to generate electronic chip designs.",
+    "summary": "PhD student at Télécom Paris, working on hierarchical methods for graph generation, with applications to Electronic Design Automation.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -133,6 +133,7 @@
       ]
     }
   ],
+  "duolingo": "https://www.duolingo.com/profile/DorianGail4",
   "languages": [
     {
       "language": "🇫🇷 French",
@@ -156,6 +157,10 @@
     },
     {
       "language": "🇸🇦 Arabic",
+      "fluency": "Beginner (A1)"
+    },
+    {
+      "language": "🇷🇺 Russian",
       "fluency": "Beginner (A1)"
     }
   ]
