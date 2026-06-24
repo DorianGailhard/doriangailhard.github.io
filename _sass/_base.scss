@@ -1054,6 +1054,7 @@ progress::-moz-progress-bar {
 /* Table of Contents */
 #toc-sidebar {
   z-index: 1;
+  top: 5rem;
 
   .nav {
     display: block;
