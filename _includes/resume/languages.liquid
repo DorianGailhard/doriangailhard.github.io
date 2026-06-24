@@ -1,17 +1,20 @@
-{% if data.duolingo %}
-<div class="list-group col-md-12">
-  <table class="table-cv list-group-table">
-    <tr>
-      <td class="list-group-category-icon">🦉</td>
-      <td>
-        <a href="{{ data.duolingo }}" target="_blank">
-          Duolingo Account
-        </a>
-      </td>
-    </tr>
-  </table>
-  <hr>
-</div>
+{% if site.data.resume.duolingo %}
+  <div class="list-group col-md-12">
+    <table class="table-cv list-group-table">
+      <tbody>
+        <tr>
+          <td class="list-group-category-icon">🦉</td>
+          <td class="list-group-name">
+            <a href="{{ site.data.resume.duolingo }}" target="_blank" rel="noopener noreferrer">
+              Duolingo account
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <hr class="my-2">
 {% endif %}
 
 <div class="list-groups">

@@ -1,11 +1,11 @@
 {
   "basics": {
     "name": "Dorian Gailhard",
-    "label": "PhD Student",
+    "label": "PhD Student in Artificial Intelligence",
     "image": "photo_zoom.jpeg",
     "email": "dorian.gailhard@telecom-paris.fr",
     "url": "https://github.com/DorianGailhard",
-    "summary": "PhD student at Télécom Paris, working on hierarchical methods for graph generation, with applications to Electronic Design Automation.",
+    "summary": "PhD student at Télécom Paris. My research focuses on scalable machine learning methods for graph and hypergraph generation, structured combinatorial systems, and applications to Electronic Design Automation (EDA).",
     "location": {
       "address": "",
       "postalCode": "",
@@ -30,7 +30,7 @@
       "workurl": "https://doriangailhard.github.io/projects/phd/",
       "startDate": "2024-05-01",
       "endDate": "",
-      "summary": "Advised by Jhony Giraldo, Enzo Tartaglione, and Lirida Naviner, in collaboration with Arteris. Aiming at developing a deep-learning model able to generate electronic chip designs.",
+      "summary": "Advised by Jhony H. Giraldo, Enzo Tartaglione, and Lirida Naviner. Researching scalable generative models for graphs and hypergraphs with applications to Electronic Design Automation. Current work focuses on hierarchical graph generation, particularly diffusion- and flow-matching-based approaches, and reinforcement learning for combinatorial optimization problems arising in EDA.",
       "highlights": [
         "Topic: System on Chips Design leveraging Artificial Intelligence",
         "Fields: Graph theory, Generative models"
@@ -44,7 +44,7 @@
       "workurl": "https://github.com/DorianGailhard/M2Internship",
       "startDate": "2023-05-01",
       "endDate": "2023-10-01",
-      "summary": "Supervised by Francesco Rinaldi. Worked on continuous formulations for variants of the Maximum Clique Problem in hypergraphs, with Python and C++ implementations.",
+      "summary": "Supervised by Francesco Rinaldi and Damiano Zeffiro. Studied continuous formulations of variants of the Maximum Clique Problem in k-graphs. Investigated Lovász extensions and continuous relaxations for discrete combinatorial optimization problems, deriving theoretical results and developing Python and C++ implementations of the proposed methods.",
       "highlights": [
         "Topics: Clustering, Graph Theory, Optimization, Tensor Theory, Python, C++ , Operations Research"
       ]
@@ -60,7 +60,7 @@
       "studyType": "M2",
       "startDate": "2022-09-01",
       "endDate": "2023-04-01",
-      "summary": "Deep practical and theoretical understanding of Artificial Intelligence topics, focusing on the research side of AI (maths, theory, experimentation, frontier research...)."
+      "summary": "Research-oriented master’s program in machine learning, artificial intelligence, optimization, computer vision, and applied mathematics."
     },
     {
       "institution": "Eurécom",
@@ -71,7 +71,7 @@
       "studyType": "Master of Science",
       "startDate": "2021-09-01",
       "endDate": "2022-06-01",
-      "summary": "Introduction to data science topics, focusing on the practical and engineering aspect (cloud infrastructures, database management, web development...)."
+      "summary": "Engineering-oriented program covering data science, machine learning, statistical learning, cloud computing, and large-scale data processing."
     },
     {
       "institution": "Télécom Paris",
@@ -82,7 +82,7 @@
       "studyType": "Master of Science",
       "startDate": "2020-09-01",
       "endDate": "2021-06-01",
-      "summary": "Broad curriculum introducing the main topics of computer science (programming languages, network infrastructures, digital economy, ...)."
+      "summary": "Broad engineering curriculum with a specialization in computer science, covering algorithms, software engineering, mathematics, signal processing, and telecommunications."
     },
     {
       "institution": "Lycée Hoche",
@@ -96,42 +96,42 @@
     }
   ],
   "skills": [
-    {
-      "name": "Programming",
-      "keywords": [
-        "Java (Swing, OpenCV)",
-        "Python (SKlearn, PyTorch, Jax & Haiku)",
-        "Matlab",
-        "C, C++ (SFML)"
-      ]
-    },
-    {
-      "name": "Database",
-      "keywords": [
-        "SQL",
-        "Spark",
-        "PostgreSQL"
-      ]
-    },
-    {
-      "name": "Web Development & Infrastructure",
-      "keywords": [
-        "CSS",
-        "HTML",
-        "JavaScript",
-        "AWS services",
-        "Firebase services",
-        "Docker"
-      ]
-    },
-    {
-      "name": "Design Tools",
-      "keywords": [
-        "Gimp",
-        "Figma",
-        "Blender"
-      ]
-    }
+	{
+	  "name": "Languages",
+	  "keywords": [
+	    "Python",
+	    "C++",
+	    "Java",
+	    "C"
+	  ]
+	},
+	{
+	  "name": "Machine Learning & Scientific Computing",
+	  "keywords": [
+	    "PyTorch",
+	    "PyTorch Geometric",
+	    "NetworkX",
+	    "NumPy",
+	    "Pandas",
+	    "Matplotlib"
+	  ]
+	},
+	{
+	  "name": "Data",
+	  "keywords": [
+	    "Spark",
+	    "PostgreSQL"
+	  ]
+	},
+	{
+	  "name": "Infrastructure",
+	  "keywords": [
+	    "Git",
+	    "Docker",
+	    "Linux",
+	    "AWS"
+	  ]
+	}
   ],
   "duolingo": "https://www.duolingo.com/profile/DorianGail4",
   "languages": [

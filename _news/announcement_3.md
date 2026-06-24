@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper *Feature-aware (Hyper)graph Generation via Next-Scale Prediction* has been accepted at *ICML*.
+Our paper "*Feature-aware (Hyper)graph Generation via Next-Scale Prediction*" has been accepted at *ICML*.
