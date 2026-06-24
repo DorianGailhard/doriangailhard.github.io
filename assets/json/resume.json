@@ -99,37 +99,25 @@
 	{
 	  "name": "Languages",
 	  "keywords": [
-	    "Python",
-	    "C++",
-	    "Java",
-	    "C"
+	    "Python, C++, Java, C"
 	  ]
 	},
 	{
-	  "name": "Machine Learning & Scientific Computing",
+	  "name": "Machine Learning",
 	  "keywords": [
-	    "PyTorch",
-	    "PyTorch Geometric",
-	    "NetworkX",
-	    "NumPy",
-	    "Pandas",
-	    "Matplotlib"
+	    "PyTorch, PyTorch Geometric, NetworkX, NumPy, Pandas, Matplotlib"
 	  ]
 	},
 	{
 	  "name": "Data",
 	  "keywords": [
-	    "Spark",
-	    "PostgreSQL"
+	    "Spark, PostgreSQL"
 	  ]
 	},
 	{
 	  "name": "Infrastructure",
 	  "keywords": [
-	    "Git",
-	    "Docker",
-	    "Linux",
-	    "AWS"
+	    "Git, Docker, Linux, AWS"
 	  ]
 	}
   ],
