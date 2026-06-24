@@ -27,9 +27,9 @@ layout: default
           <a class="anchor" id="{{ entry.title }}"></a>
           <div class="card mt-3 p-3">
             <div class="cv-card-title-row">
-		  <h3 class="card-title font-weight-medium">{{ data[0] | capitalize }}</h3>
+		  <h3 class="card-title font-weight-medium">{{ entry.title | capitalize }}</h3>
 
-		  {% if data[0] == 'languages' and site.data.resume.duolingo %}
+		  {% if entry.title == 'languages' and site.data.resume.duolingo %}
 		    <a class="language-duolingo-badge" href="{{ site.data.resume.duolingo }}" target="_blank" rel="noopener noreferrer">
 		      🦉 Duolingo
 		    </a>

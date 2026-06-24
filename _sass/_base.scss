@@ -1054,12 +1054,11 @@ progress::-moz-progress-bar {
 /* Table of Contents */
 #toc-sidebar {
   z-index: 1;
-  padding-top: 1rem;
 
   .nav {
     display: block;
     border-left: 1px solid var(--global-divider-color);
-    padding-left: 1rem;
+    padding-left: 0.75rem;
   }
 
   .nav > li > a {
@@ -1069,8 +1068,8 @@ progress::-moz-progress-bar {
     line-height: 1.4;
     padding: 0.25rem 0;
     border-left: 2px solid transparent;
-    margin-left: -1.1rem;
-    padding-left: 1rem;
+    margin-left: -0.85rem;
+    padding-left: 0.75rem;
     text-decoration: none;
 
     &:hover {
@@ -1087,7 +1086,7 @@ progress::-moz-progress-bar {
 
   .nav .nav > li > a {
     font-size: 0.8rem;
-    padding-left: 1.5rem;
+    padding-left: 0.75rem;
   }
 }
 
