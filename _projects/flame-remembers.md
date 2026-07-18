@@ -1,7 +1,7 @@
 ---
 layout: page
-title: The flame remembers
-description: A short game entirely vibe-coded with Codex.
+title: The Flame Remembers
+description: A short game entirely vibe-coded with Codex over a few days.
 img: assets/img/logo_flame_remembers.png
 importance: 1
 category: Personal
