@@ -8,6 +8,16 @@ category: Personal
 related_publications: false
 ---
 
+<swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="true" rewind="true">
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/flame-remembers/1.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/flame-remembers/2.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/flame-remembers/3.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/flame-remembers/4.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/flame-remembers/5.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+  <swiper-slide>{% include figure.liquid loading="eager" path="assets/flame-remembers/6.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
+</swiper-container>
+
+
 A short game I made over a couple of days using Codex, partly to test the capabilities of GPT-5.6 and partly because I had had the idea sitting in the back of my mind for some time.
 
 It's a minimalistic platformer that I intended as a puzzle game. The player would have had poor visibility due to darkness, forcing them to strategically use torches to get a better knowledge of the map, and then remember its layout before jumping from platform to platform, without necessarily seeing them, relying instead on their memory.
