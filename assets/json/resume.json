@@ -5,7 +5,7 @@
     "image": "photo_zoom.jpeg",
     "email": "dorian.gailhard@telecom-paris.fr",
     "url": "https://github.com/DorianGailhard",
-    "summary": "PhD student at Télécom Paris. My research focuses on scalable machine learning methods for graph and hypergraph generation, structured combinatorial systems, and applications to Electronic Design Automation (EDA).",
+    "summary": "I am a third-year PhD student at Télécom Paris. My research focuses on scalable machine learning methods for graph and hypergraph generation, structured combinatorial systems, and applications to Electronic Design Automation (EDA).",
     "location": {
       "address": "",
       "postalCode": "",
@@ -30,10 +30,10 @@
       "workurl": "https://doriangailhard.github.io/projects/phd/",
       "startDate": "2024-05-01",
       "endDate": "",
-      "summary": "Advised by Jhony H. Giraldo, Enzo Tartaglione, and Lirida Naviner. Researching scalable generative models for graphs and hypergraphs with applications to Electronic Design Automation. Current work focuses on hierarchical graph generation, particularly diffusion- and flow-matching-based approaches, and reinforcement learning for combinatorial optimization problems arising in EDA.",
+      "summary": "Advised by Jhony H. Giraldo, Enzo Tartaglione, and Lirida Naviner. i study hierarchical graph generative approaches and their application to EDA.",
       "highlights": [
         "Topic: System on Chips Design leveraging Artificial Intelligence",
-        "Fields: Graph theory, Generative models"
+        "Keywords: Graph theory, Generative models, EDA"
       ]
     },
     {
@@ -44,9 +44,9 @@
       "workurl": "https://github.com/DorianGailhard/M2Internship",
       "startDate": "2023-05-01",
       "endDate": "2023-10-01",
-      "summary": "Supervised by Francesco Rinaldi and Damiano Zeffiro. Studied continuous formulations of variants of the Maximum Clique Problem in k-graphs. Investigated Lovász extensions and continuous relaxations for discrete combinatorial optimization problems, deriving theoretical results and developing Python and C++ implementations of the proposed methods.",
+      "summary": "Supervised by Francesco Rinaldi and Damiano Zeffiro. I studied continuous formulations of variants of the Maximum Clique Problem in k-graphs.",
       "highlights": [
-        "Topics: Clustering, Graph Theory, Optimization, Tensor Theory, Python, C++ , Operations Research"
+        "Keywords: Clustering, Graph Theory, Optimization, Tensor Theory, Python, C++ , Operations Research"
       ]
     }
   ],

@@ -1135,7 +1135,7 @@ progress::-moz-progress-bar {
 
 .medium-zoom-overlay,
 .medium-zoom-image--opened {
-  z-index: 999;
+  z-index: 2000 !important;
 }
 
 #toc-sidebar {
