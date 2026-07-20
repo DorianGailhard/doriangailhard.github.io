@@ -2,6 +2,34 @@
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
+// Custom
+.projects {
+
+  .card {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .card-body {
+    padding: 0.55rem;
+    padding-bottom: 0.35rem;
+  }
+
+  .card-text {
+    margin-bottom: 0;
+  }
+}
+
+.projects .card-img-top {
+    display: block;
+    margin-bottom: 0;
+}
+
+.projects .card > figure {
+    margin-bottom: 0;
+}
+
+
 // Typography
 body {
   text-align: justify;
@@ -547,7 +575,11 @@ footer.sticky-bottom {
 
   h1 {
     color: var(--global-theme-color);
-    font-size: 5rem;
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 0.875rem;
   }
 }
 
@@ -580,6 +612,10 @@ footer.sticky-bottom {
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
+
+  h3 {
+    font-size: 1.35rem;
+  }
 
   li {
     border-bottom: 1px solid var(--global-divider-color);

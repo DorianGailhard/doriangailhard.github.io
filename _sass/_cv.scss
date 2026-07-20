@@ -130,6 +130,7 @@ div.list-groups {
   justify-content: flex-start;
   flex-direction: row;
   align-content: center;
+  text-align: left;
 }
 
 div.list-group {
@@ -138,11 +139,14 @@ div.list-group {
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 2rem;
+  text-align: left;
 }
 
 td.list-group-category {
   color: var(--global-theme-color);
   margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
 }
 
 td.list-group-category-icon {
@@ -153,8 +157,12 @@ td.list-group-category-icon {
 }
 
 td.list-group-name {
-  font-size: 0.8rem;
-  font-weight: 300;
+  font-size: 0.95rem;
+  font-weight: 400;
+
+  b {
+    font-weight: 400;
+  }
 }
 
 td.list-group-level {
