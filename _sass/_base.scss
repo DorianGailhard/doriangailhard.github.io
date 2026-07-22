@@ -640,13 +640,11 @@ footer.sticky-bottom {
 }
 
 .post-title {
+  font-size: 2rem;
+
   mjx-container[jax="CHTML"][display="true"] {
     display: unset;
   }
-}
-
-.blog-post .post-title {
-  font-size: 2rem;
 }
 
 .post-list {
@@ -799,8 +797,6 @@ footer.sticky-bottom {
       margin-bottom: 1rem;
 
       .preview {
-        min-width: 0;
-        width: 100%;
       }
 
       .abbr {
@@ -938,24 +934,6 @@ footer.sticky-bottom {
     div.award.hidden.open {
       border-color: var(--global-highlight-color);
     }
-  }
-}
-
-.publications ol.bibliography li > .row {
-  flex-wrap: nowrap;
-
-  > .publication-thumbnail {
-    flex: 0 0 clamp(144px, 16.667%, 168px);
-    max-width: clamp(144px, 16.667%, 168px);
-    padding-right: 0.75rem;
-    padding-left: 0.75rem;
-  }
-
-  > .publication-details {
-    flex: 1 1 0;
-    min-width: 0;
-    padding-right: 0.75rem;
-    padding-left: 0.75rem;
   }
 }
 
