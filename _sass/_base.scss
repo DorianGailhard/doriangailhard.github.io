@@ -640,11 +640,13 @@ footer.sticky-bottom {
 }
 
 .post-title {
-  font-size: 2rem;
-
   mjx-container[jax="CHTML"][display="true"] {
     display: unset;
   }
+}
+
+.blog-post .post-title {
+  font-size: 2rem;
 }
 
 .post-list {
