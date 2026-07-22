@@ -430,6 +430,14 @@ ul.task-list input[type="checkbox"] {
   background-color: inherit;
   color: var(--global-text-color);
 
+  .search-shortcut {
+    color: inherit;
+    font-size: 1em;
+    opacity: 0.55;
+    line-height: inherit;
+    vertical-align: baseline;
+  }
+
   &:hover {
     color: var(--global-hover-color);
   }
@@ -586,23 +594,54 @@ footer.sticky-bottom {
 .tag-category-list {
   border-bottom: 1px solid var(--global-divider-color);
   text-align: center;
-  padding-top: 1rem;
+  padding-top: 1.75rem;
+  padding-bottom: 1.9rem;
 
-  ul {
+  .tag-category-items {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    display: flow-root;
+    align-items: center;
+    gap: 0.35rem 0;
+    max-width: 52rem;
+    margin: 0 auto !important;
 
-    p,
-    li {
-      list-style: none;
-      display: inline-block;
-      padding: 1rem 0.5rem;
+    .tag-category-item {
+      flex: 0 0 auto;
+      padding: 0.2rem 0.5rem;
       color: var(--global-text-color-light);
+      white-space: nowrap;
+    }
+
+    .tag-category-separator {
+      flex: 0 0 auto;
+      margin: 0 0.25rem;
+      padding: 0.2rem 0.5rem;
+      color: var(--global-text-color-light);
+    }
+
+    &.is-balanced {
+      display: block;
+
+      .tag-category-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.35rem 0;
+      }
     }
   }
 }
 
+@media (max-width: 400px) {
+  .tag-category-list .tag-category-items {
+    font-size: 0.8rem;
+  }
+}
+
 .post-title {
+  font-size: 2rem;
+
   mjx-container[jax="CHTML"][display="true"] {
     display: unset;
   }
@@ -758,6 +797,8 @@ footer.sticky-bottom {
       margin-bottom: 1rem;
 
       .preview {
+        min-width: 0;
+        width: 100%;
       }
 
       .abbr {
@@ -895,6 +936,24 @@ footer.sticky-bottom {
     div.award.hidden.open {
       border-color: var(--global-highlight-color);
     }
+  }
+}
+
+.publications ol.bibliography li > .row {
+  flex-wrap: nowrap;
+
+  > .publication-thumbnail {
+    flex: 0 0 clamp(144px, 16.667%, 168px);
+    max-width: clamp(144px, 16.667%, 168px);
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+
+  > .publication-details {
+    flex: 1 1 0;
+    min-width: 0;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
   }
 }
 
@@ -1091,6 +1150,7 @@ progress::-moz-progress-bar {
 #toc-sidebar {
   z-index: 1;
   top: 6rem;
+  text-align: left;
 
   .nav {
     display: block;
@@ -1125,6 +1185,10 @@ progress::-moz-progress-bar {
     font-size: 0.8rem;
     padding-left: 0.75rem;
   }
+}
+
+#table-of-contents {
+  text-align: left;
 }
 
 /* small screens */

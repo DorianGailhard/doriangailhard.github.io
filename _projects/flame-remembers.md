@@ -21,6 +21,8 @@ images:
 
 ---
 
+<br>
+
 A short game I made over a couple of days using Codex, partly to test the capabilities of GPT-5.6 and partly because I had had the idea sitting in the back of my mind for some time.
 
 It's a minimalistic platformer that I intended as a puzzle game. The player would have had poor visibility due to darkness, forcing them to strategically use torches to get a better knowledge of the map, and then remember its layout before jumping from platform to platform, without necessarily seeing them, relying instead on their memory.
