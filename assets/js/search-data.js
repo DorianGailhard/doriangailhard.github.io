@@ -18,14 +18,14 @@ ninja.data = [{
           },
         },{id: "nav-publications",
           title: "Publications",
-          description: "",
+          description: "Publications I authored or co-authored.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
           },
         },{id: "nav-projects",
           title: "Projects",
-          description: "",
+          description: "My professional and personal projects.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
