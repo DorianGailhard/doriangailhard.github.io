@@ -21,3 +21,5 @@ nav_order: 6
 - **Short seminar on flow-matching** [[Slides](https://doriangailhard.github.io/assets/pdf/Seminar_FM.pdf)]
   
 - **Short seminar on Reinforcement Learning** [[Slides](https://doriangailhard.github.io/assets/pdf/Seminar_RL.pdf)]
+
+- **Short seminar on Optimal / Stochastic Control and Optimal Transport for ML** [[Slides](https://doriangailhard.github.io/assets/pdf/Seminar_control_OT.pdf)]

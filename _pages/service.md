@@ -22,6 +22,8 @@ nav_order: 7
   
 - **Short seminar on Reinforcement Learning** [[Slides](https://doriangailhard.github.io/assets/pdf/Seminar_RL.pdf)]
 
+- **Short seminar on Optimal / Stochastic Control and Optimal Transport for ML** [[Slides](https://doriangailhard.github.io/assets/pdf/Seminar_control_OT.pdf)]
+
 <br>
 
 ---
