@@ -32,7 +32,11 @@ nav_order: 7
 
 #### Reviewing
 - **NeurIPS 2025 Workshop: New Perspectives in Graph Machine Learning** [[Link](https://neurips.cc/virtual/2025/workshop/109579)]
+
 - **IEEE Transactions on Signal and Information Processing over Networks** [[Link](https://signalprocessingsociety.org/publications-resources/ieee-transactions-signal-and-information-processing-over-networks)]
+
+- **LoG 2026** [[Link](https://logconference.org/)]
+
 
 <br>
 
