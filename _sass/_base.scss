@@ -250,6 +250,13 @@ ul.task-list input[type="checkbox"] {
 
 // Profile
 
+@media (max-width: 575.98px) {
+  .container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
 .profile {
   width: 100%;
 
@@ -297,6 +304,32 @@ ul.task-list input[type="checkbox"] {
       text-decoration: none;
     }
   }
+}
+
+// Keep news and latest-post entries readable at every screen size.
+.news table {
+  tr {
+    display: block;
+    padding: 0.35rem 0;
+  }
+
+  th,
+  td {
+    display: inline;
+    width: auto !important;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+  }
+
+  th {
+    padding-bottom: 0;
+    margin-right: 0.5rem;
+  }
+}
+
+.latest-posts {
+  text-align: left;
 }
 
 // Navbar customization
@@ -795,6 +828,10 @@ footer.sticky-bottom {
     padding: 0;
     margin-top: 0;
 
+    > li > .row > [id] {
+      text-align: left;
+    }
+
     li {
       margin-bottom: 1rem;
 
@@ -829,6 +866,10 @@ footer.sticky-bottom {
       }
 
       .author {
+        .author-item.author-hidden {
+          display: none;
+        }
+
         a {
           border-bottom: 1px dashed var(--global-theme-color);
 
@@ -843,7 +884,7 @@ footer.sticky-bottom {
           font-style: normal;
         }
 
-        > span.more-authors {
+        .more-authors {
           color: var(--global-text-color-light);
           border-bottom: 1px dashed var(--global-text-color-light);
           cursor: pointer;
@@ -857,8 +898,11 @@ footer.sticky-bottom {
 
       .links {
         a.btn {
-          color: var(--global-text-color);
-          border: 1px solid var(--global-text-color);
+          color: color-mix(in srgb, var(--global-text-color) 80%, transparent);
+          border: 1px solid color-mix(in srgb, var(--global-text-color) 80%, transparent);
+          border-radius: 0.25rem;
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08) !important;
+          transition: color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
           padding-left: 1rem;
           padding-right: 1rem;
           padding-top: 0.25rem;
@@ -866,8 +910,9 @@ footer.sticky-bottom {
           margin-left: 0;
 
           &:hover {
-            color: var(--global-theme-color);
-            border-color: var(--global-theme-color);
+            color: var(--global-theme-color) !important;
+            border-color: var(--global-theme-color) !important;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.14) !important;
           }
         }
         a.award.btn {
@@ -988,6 +1033,7 @@ html.transition *:after {
     font-size: 0.875rem;
     padding-top: 0.25rem;
     padding-bottom: 1rem;
+    text-align: left;
 
     a {
       color: var(--global-text-color-light);
@@ -996,6 +1042,11 @@ html.transition *:after {
       &:hover {
         color: var(--global-theme-color);
       }
+    }
+
+    .post-tag-item {
+      display: inline-block;
+      white-space: nowrap;
     }
   }
 }

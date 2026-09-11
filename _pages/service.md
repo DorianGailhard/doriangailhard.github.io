@@ -35,7 +35,7 @@ nav_order: 7
 
 - **IEEE Transactions on Signal and Information Processing over Networks** [[Link](https://signalprocessingsociety.org/publications-resources/ieee-transactions-signal-and-information-processing-over-networks)]
 
-- **LoG 2026** [[Link](https://logconference.org/)]
+- **Learning on Graphs 2026** [[Link](https://logconference.org/)]
 
 
 <br>

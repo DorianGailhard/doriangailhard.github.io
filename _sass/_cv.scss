@@ -18,14 +18,17 @@
   font-size: 0.8rem;
   color: var(--global-text-color-light);
   border: 1px solid var(--global-divider-color);
-  border-radius: 999px;
+  border-radius: 0.25rem;
   padding: 0.2rem 0.6rem;
   white-space: nowrap;
   text-decoration: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  transition: color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 
   &:hover {
-    color: var(--global-theme-color);
-    border-color: var(--global-theme-color);
+    color: var(--global-theme-color) !important;
+    border-color: var(--global-theme-color) !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
     text-decoration: none;
   }
 }
@@ -71,6 +74,13 @@ a.btncv:hover {
 p.location {
   font-size: 0.7rem;
   white-space: nowrap;
+}
+
+.cv-description-separator {
+  border: 0;
+  border-top: 1px solid var(--global-divider-color);
+  margin-top: 0.35rem;
+  margin-bottom: 0.65rem;
 }
 
 i.iconlocation {

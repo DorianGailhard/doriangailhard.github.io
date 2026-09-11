@@ -25,18 +25,14 @@ layout: default
     </p>
     <p class="post-tags">
       {% if url_beginning == '/blog/' %}
-        <a href="{{ year | prepend: '/blog/' | relative_url }}"> <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
+        <span class="post-tag-item"><a href="{{ year | prepend: '/blog/' | relative_url }}"> <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a></span>
       {% else %}
-        <i class="fa-solid fa-calendar fa-sm"></i> {{ year }}
+        <span class="post-tag-item"><i class="fa-solid fa-calendar fa-sm"></i> {{ year }}</span>
       {% endif %}
       {% if tags != '' %}
         &nbsp; &middot; &nbsp;
         {% for tag in page.tags %}
-          {% if url_beginning == '/blog/' %}
-            <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}"> <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a>
-          {% else %}
-            <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}
-          {% endif %}
+          <span class="post-tag-item">{% if url_beginning == '/blog/' %}<a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}"> <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a>{% else %}<i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}{% endif %}</span>
           {% unless forloop.last %}
             &nbsp;
           {% endunless %}
@@ -46,13 +42,7 @@ layout: default
       {% if categories != '' %}
         &nbsp; &middot; &nbsp;
         {% for category in page.categories %}
-          {% if url_beginning == '/blog/' %}
-            <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">
-              <i class="fa-solid fa-tag fa-sm"></i> {{ category -}}
-            </a>
-          {% else %}
-            <i class="fa-solid fa-tag fa-sm"></i> {{ category }}
-          {% endif %}
+          <span class="post-tag-item">{% if url_beginning == '/blog/' %}<a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}"><i class="fa-solid fa-tag fa-sm"></i> {{ category -}}</a>{% else %}<i class="fa-solid fa-tag fa-sm"></i> {{ category }}{% endif %}</span>
           {% unless forloop.last %}
             &nbsp;
           {% endunless %}
