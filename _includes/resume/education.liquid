@@ -25,8 +25,7 @@
                 <tr>
                   <td>
                     <p class="location">
-                      <i class="fa-solid fa-location-dot iconlocation"></i>
-                      {{ content.location }}
+                      <i class="fa-solid fa-location-dot iconlocation"></i><span>{{ content.location }}</span>
                     </p>
                   </td>
                 </tr>
@@ -36,7 +35,9 @@
         </div>
         <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
           <h6 class="title font-weight-bold ml-1 ml-md-4">
-            <a href="{{ content.workurl }}">{{ content.studyType }}</a>
+            <a href="{{ content.workurl }}">
+              {{- content.studyType -}}
+            </a>
           </h6>
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
           	{% if content.url %}
@@ -48,10 +49,7 @@
 		    </a>
 		  {% endif %}
 	  </h6>
-          {% if content.area or content.courses.size > 0 %}
-            <hr class="cv-description-separator ml-1 ml-md-4">
-          {% endif %}
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ content.area }}</h6>
+          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ content.summary }}</h6>
           <ul class="items">
             {% for item in content.courses %}
               <li>

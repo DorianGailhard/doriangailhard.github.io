@@ -41,7 +41,7 @@
       "workurl": "https://github.com/DorianGailhard/M2Internship",
       "startDate": "2023-05-01",
       "endDate": "2023-10-01",
-      "summary": "Studied continuous formulations of the Maximum Clique Problem on k-graphs, including Lovász extensions and relaxations for discrete combinatorial optimization, with implementations in Python and C++.",
+      "summary": "Studied continuous formulations of the Maximum Clique Problem on k-graphs, including Lovász extensions and relaxations for discrete combinatorial optimization, with implementations in Python and <span class=\"cv-nowrap\">C++</span>.",
       "highlights": []
     }
   ],
@@ -97,7 +97,7 @@
     },
     {
       "name": "Programming",
-      "keywords": ["Python, C++, C"]
+      "keywords": ["Python, <span class=\"cv-nowrap\">C++</span>, C"]
     },
     {
       "name": "Research Infrastructure",
