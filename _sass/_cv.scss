@@ -85,57 +85,86 @@ p.location {
 .cv .row:has(.date-column) {
   position: relative;
   display: grid;
-  grid-template-columns: auto auto minmax(0, 1fr);
+  grid-template-columns: 8.25rem minmax(0, 1fr);
   align-items: baseline;
-  column-gap: 0;
+  column-gap: 1.15rem;
 }
 
 .cv .date-column {
-  display: contents;
-  text-align: left !important;
+  display: block;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  align-self: start;
+  width: 8.25rem;
+  max-width: 8.25rem;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  text-align: center !important;
+  transform: none;
 }
 
 .cv .date-column .table-cv {
-  display: contents;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
 }
 
 .cv .date-column .table-cv tbody,
 .cv .date-column .table-cv tr,
 .cv .date-column .table-cv td {
-  display: contents;
+  display: block;
+  width: 100%;
+  padding: 1px 0;
+}
+
+.cv .date-column .cv-date-block {
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
 }
 
 .cv .date-column .location {
-  margin-bottom: 0;
-  grid-column: 1;
-  grid-row: 2;
-  width: 0;
-  min-width: 100%;
+  width: 100%;
   max-width: 100%;
-  margin-left: 0;
+  margin: 0.1rem 0 0;
   font-size: 0.7rem;
-  text-align: center;
   white-space: normal;
-  overflow-wrap: anywhere;
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 0.2rem;
   line-height: 1.1;
 }
 
-.cv .date-column .location span {
+.cv .date-column .location-content {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.1rem;
+  max-width: 100%;
+}
+
+.cv .date-column .location-text {
+  display: block;
   flex: 0 1 auto;
   min-width: 0;
-  max-width: calc(100% - 2rem);
-  text-align: left;
-  text-align-last: center;
+  text-align: center;
+  white-space: normal;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.cv .date-column .location .iconlocation {
+  position: static;
+  flex: 0 0 auto;
+  width: 0.8rem;
+  margin: 0;
+  text-align: center;
+  transform: none;
 }
 
 .cv .date-column .badge {
-  grid-column: 1;
-  grid-row: 1;
-  margin-right: 0.85rem;
+  display: inline-block;
+  margin-right: 0;
 }
 
 .cv .date-column + .col-xs-10 {
@@ -164,7 +193,7 @@ p.location {
 .cv .date-column + .col-xs-10 > .title ~ h6:last-of-type {
   grid-column: 1 / -1;
   grid-row: 4;
-  margin-left: 0 !important;
+  margin-left: 1rem !important;
   margin-top: 0.45rem;
 }
 

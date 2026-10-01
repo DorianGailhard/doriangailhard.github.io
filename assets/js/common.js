@@ -58,3 +58,32 @@ $(document).ready(function () {
     trigger: "hover",
   });
 });
+
+
+function fitCvLocationText() {
+  const locations = Array.from(document.querySelectorAll(".cv .date-column .location-text"));
+  if (locations.length === 0) return;
+
+  // Restore natural flex sizing so wrapping follows the available date-column width.
+  locations.forEach((location) => {
+    location.style.width = "";
+  });
+
+  requestAnimationFrame(() => {
+    locations.forEach((location) => {
+      const range = document.createRange();
+      range.selectNodeContents(location);
+      const lines = Array.from(range.getClientRects()).filter((rect) => rect.width > 0);
+
+      // Multiline text only needs the width of its longest rendered line.
+      if (lines.length > 1) {
+        const longestLine = Math.max(...lines.map((line) => line.width));
+        location.style.width = Math.ceil(longestLine) + "px";
+      }
+    });
+  });
+}
+
+document.addEventListener("DOMContentLoaded", fitCvLocationText);
+window.addEventListener("resize", fitCvLocationText);
+if (document.fonts) document.fonts.ready.then(fitCvLocationText);
